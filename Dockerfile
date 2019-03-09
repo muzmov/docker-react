@@ -1,4 +1,4 @@
-FROM node:alpine as builder
+FROM node:10.15.3-alpine as builder
 WORKDIR /usr/app
 ADD package.json .
 RUN npm install
